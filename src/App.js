@@ -12,7 +12,7 @@ import CardGroup from 'react-bootstrap/CardGroup';
 function App() {
   return (
     <div className="App">
-      {/* REACT FRAGMENT for navigation bar */}
+      {/* REACT FRAGMENT for Navigation bar */}
       <>
         <Navbar expand="lg" className="bg-body-tertiary" sticky="top">
           <Container>
@@ -30,7 +30,7 @@ function App() {
         </Navbar>
       </>
 
-      {/* REACT FRAGMENT */}
+      {/* REACT FRAGMENT for Page Header*/}
       <>
         <div style={{ textAlign: "center", padding: '0.6em', backgroundColor: "lightgray"}}>
           <h3 style={{color: 'teal', lineHeight : 3}}>Your partner for dream vacation</h3>
