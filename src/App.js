@@ -9,6 +9,11 @@ import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 
 
+import product from "./product.json";
+import Name from "./components/Name";
+import Client from "./components/Client";
+import Description from "./components/Description";
+
 function App() {
   return (
     <div className="App">
@@ -37,6 +42,25 @@ function App() {
           <p><b>TravelExpert</b> has a global network of the best adventure travel operators and travel specialists. Book fully-packaged tours with leading operators in the industry, or seek start to finish travel assistance from the industry's leading travel agents. Both entities focus on delivering the best natural, cultural and adventure itineraries on the market.</p>
         </div>
       </>
+
+    {/* CARD FOR PRODUCT.JSON */}
+    <div style={{className:"jsonCard" ,display: "flex", flexDirection: 'column', alignItems : "center", padding: '0.6em', backgroundColor: "lightgray"}}>
+      <Card style={{display: "flex", alignItems: "center" , width: '38rem', flexDirection: 'row'}}>
+        <Card.Img variant="top" src={product.image} style={{ width: '35%', borderRadius: 10, marginLeft:'3%'}} />
+        <Card.Body>
+          <Card.Title>
+            <Name />
+          </Card.Title>
+          <Card.Subtitle className="mb-2 text-muted">
+            <Client />
+          </Card.Subtitle>
+          <Card.Text>
+            <Description />
+          </Card.Text>
+        </Card.Body>
+      </Card>
+    </div>
+
 
     {/* CARDGROUP FOR INLINE DIPLAY */}
       <CardGroup>
